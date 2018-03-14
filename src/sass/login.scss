@@ -1,0 +1,35 @@
+@import 'common';
+
+body{
+  background:url(../images/sign_bg.jpg) no-repeat 50% 0;
+}
+/*nav*/
+.loginNav{
+  width:100%;
+  height:60px;
+  background-color:#333;
+  .loginMiddle{
+    width:98%;
+    height:60px;
+    margin:0 auto;
+    .loginA{
+      width:60px;
+      height:60px;
+      float:left;
+      .loginImg{
+        width:60px;
+        height:60px;
+      }
+    }
+    h2{
+      float: left;
+      color: #fff;
+      line-height: 60px;
+      margin-left: 1%;
+    }
+    #data{
+      color:#fff;
+      float:right;
+    }
+  }
+}
