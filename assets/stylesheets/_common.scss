@@ -1,0 +1,30 @@
+body,div,p,h1,h2,h3,h4,h5,h6,hr,ul,ol,li,dd,dt,dl,table,tr,td,fieldset,caption,form,input,img,legend{
+	margin:0;
+	padding:0;
+}
+html,body{
+	height:100%;
+	background:#f2f6f8;
+}
+html{
+	font-size: 26.67vw;
+}
+body{
+	font-family: "Microsoft Himalaya",Arial;
+	//font-family:'HiraginoGBW3109078bded1c0ae';
+	display:-webkit-flex;
+	-webkit-flex-direction: column;
+	-webkit-justify-content: space-between;
+}
+ol,ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	display:block;
+}
+img{
+	border:none;
+	display:block;
+}
+
