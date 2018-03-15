@@ -3,11 +3,14 @@
 body{
   background:url(../images/sign_bg.jpg) no-repeat 50% 0;
 }
+
 /*nav*/
 .loginNav{
   width:100%;
   height:60px;
   background-color:#333;
+  position:fixed;
+  z-index:1;
   .loginMiddle{
     width:98%;
     height:60px;
@@ -27,9 +30,21 @@ body{
       line-height: 60px;
       margin-left: 1%;
     }
-    #data{
-      color:#fff;
-      float:right;
+    #loginData{
+      color: #fff;
+      width: 20%;
+      float: right;
+      font-size: 14px;
+      line-height: 60px;
+      text-align: center;
+      .hour{
+        padding-left:5%;
+      }
     }
   }
+}
+
+/*login*/
+.login{
+  width:40%;
 }

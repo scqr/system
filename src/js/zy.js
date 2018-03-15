@@ -1,4 +1,3 @@
-/*login*/
 // 格式化日期对象为字符串
 function formatDateToString() {
     var oDate = new Date();
@@ -8,17 +7,8 @@ function formatDateToString() {
     var iHour   = addPrefixZero(oDate.getHours());
     var iMinute = addPrefixZero(oDate.getMinutes());
     var iSecond = addPrefixZero(oDate.getSeconds());
-    // 获取随机的背景色
-    var sBgColor = generatorColor();
-    return '<span>' + iYear + '</span>年<span>' + iMonth + '</span>月<span>' + iDate + '</span>日<span>' + iHour + '</span>：<span>' + iMinute + '</span>：<span style="background:'+ sBgColor +';">' + iSecond + '</span>';
-}
-// 随机生成颜色
-function generatorColor() {
-    var str = '#';
-    for(var i = 0; i < 6; i++) {
-        str += Math.round(Math.random() * 15).toString(16);
-    }
-    return str;
+
+    return '现在时刻：' + '<span>' + iYear + '</span>/<span>' + iMonth + '</span>/<span>' + iDate + '</span><span class="hour">' + iHour + '</span>:<span>' + iMinute + '</span>:<span>' + iSecond + '</span>';
 }
 // 添加前缀0
 function addPrefixZero(num) {
@@ -28,8 +18,34 @@ function addPrefixZero(num) {
     return num;
 }
 $(function ($) {
-    $("#data").html(formatDateToString());
+    /*login*/
+    $("#loginData").html(formatDateToString());
     setInterval(function () {
-        $("#data").html(formatDateToString());
+        $("#loginData").html(formatDateToString());
     }, 1000);
+
+    /*my*/
+    var iTimer = null;
+    $(".loginUser").on('mouseenter', function () {
+        clearTimeout(iTimer);
+        $(".loginUls").css('display', 'block');
+    });
+    $(".loginUser").on('mouseleave', function () {
+        clearTimeout(iTimer);
+        iTimer = setTimeout(function () {
+            $(".loginUls").css('display', 'none');
+        }, 50);
+    });
+    $(".loginUls").hover(function () {
+        clearTimeout(iTimer);
+    }, function () {
+        $(".loginUls").css('display', 'none');
+    });
+
+    /*section*/
+    $('li').click(function (ev) {
+        ev.stopPropagation();
+    }).has('ul').click(function () {
+        $(this).toggleClass('b').children('ul').stop(true).toggle('normal');
+    });
 });
