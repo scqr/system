@@ -10,6 +10,8 @@ body{
   height:60px;
   background-color:#333;
   position:fixed;
+  top:0;
+  left:0;
   z-index:1;
   .loginMiddle{
     width:98%;
@@ -46,5 +48,49 @@ body{
 
 /*login*/
 .login{
-  width:40%;
+  margin: auto;
+  padding: 24% 0;
+  width: 40%;
+  text-align: center;
+  p{
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+  form{
+    .loginPass{
+      span{
+        margin-right:3%;
+      }
+    }
+    input{
+      outline:none;
+      margin-top: 3%;
+      width: 33%;
+    }
+    [type="text"]{
+      padding:1%;
+    }
+    [type="password"]{
+      padding:1%;
+    }
+    .loginP{
+      margin-top: 2%;
+      margin-bottom: 0;
+      color: red;
+      font-size: 14px;
+      height: 14px;
+      line-height: 14px;
+    }
+    [type="button"]{
+      background:#ccc;
+      width:30%;
+      height:26px;
+      cursor: pointer;
+      border-radius:5px;
+      font-size: 14px;
+      margin-bottom: 2%;
+    }
+  }
 }
