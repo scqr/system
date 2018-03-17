@@ -11,7 +11,7 @@
     <div class="loginMiddle">
         <a class="loginA" href="javascript:;"><img class="loginImg" src="images/logo.gif"/></a>
         <h2>腾讯课堂后台管理系统</h2>
-        <div class="loginUser">我 的</div>
+        <div class="loginUser">设 置</div>
         <div id="loginData"></div>
         <ul class="loginUls">
             <li><a href="javascript:;">修改密码</a></li>
@@ -19,7 +19,7 @@
         </ul>
     </div>
 </div>
-<!--section-->
+<!--section-left-->
 <div class="section">
     <ul class="sectionUls">
         <li class="a">系统公告</li>
@@ -45,6 +45,35 @@
             </ul>
         </li>
     </ul>
+</div>
+<!--section-right-->
+<div class="sectionRight">
+    <div style="overflow:hidden">
+        <h2>公告</h2>
+        <button class="sectionButton">新建公告</button>
+    </div>
+    <div class="sectionContent">
+        <ul class="contentUls">
+            <li>
+                <h3 class="h3">公告标题<a title="删除" href="javascript:;" class="no">&times;</a></h3>
+                <div class="contentP">好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好</div>
+                <p class="contentData">发布时间：2017年10月26日</p>
+            </li>
+        </ul>
+        <div id="empty">
+            <div id="box">
+                <a href="javascript:;" id="no1">&times;</a>
+                <input class="boxInput" type="text" placeholder="公告标题">
+                <!--<p>请输入内容：</p>-->
+                <div style="font-size: 14px;text-align: -webkit-auto;width: 70%;"><label>发布时间：</label><input type="text" placeholder="格式(例如):2017年10月25日" class="data"/></div>
+                <textarea id="write"></textarea>
+                <div id="but">
+                    <button id="left-btn">发 布</button>
+                    <button id="right-btn">取 消</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
