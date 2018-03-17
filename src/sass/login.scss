@@ -48,10 +48,13 @@ body{
 
 /*login*/
 .login{
-  margin: auto;
-  padding: 24% 0;
+  position: absolute;
+  top: 30%;
+  left: 30%;
   width: 40%;
   text-align: center;
+  background: rgba(144,144,144,0.4);
+  border-radius: 10px;
   p{
     font-size: 20px;
     line-height: 34px;
