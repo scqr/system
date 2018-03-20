@@ -17,13 +17,12 @@ var  minify = require("gulp-babel-minify");
 
 gulp.task("minify", function(){
 gulp.src("javascripts/*.js")
-
 //    .pipe(minify({
 //      mangle: {
 //        keepClassName: true
 //     }
 //    }))
-  .pipe(gulp.dest("D:\\txsystem\\system\\javascripts"));
+  .pipe(gulp.dest("D:\\txsystem\\system\\assets\\javascripts"));
 });
 
 //以下赵老师方法
@@ -32,7 +31,7 @@ gulp.task('sass', function () {
     return rubySass('stylesheets/*.scss', {
         sourcemap: false,
         style: 'compressed',
-    }).pipe(gulp.dest('D:\\txsystem\\system\\stylesheets'));
+    }).pipe(gulp.dest('D:\\txsystem\\system\\assets\\stylesheets'));
 });
 
 // 压缩JS 不兼容ES6
@@ -47,13 +46,13 @@ gulp.task('sass', function () {
 //把根目录下的所有的html文件复制到发布目录下
 gulp.task("copy-html",function () {
     //复制文件
-    gulp.src("/*.html").pipe(gulp.dest("D:\\txsystem\\system"));
+    gulp.src("*.html").pipe(gulp.dest("D:\\txsystem\\system\\assets"));
 });
 
 //把根目录下的所有的js文件复制到发布目录下
 gulp.task("copy-js",function () {
     //复制文件
-    gulp.src("javascripts/*.js").pipe(gulp.dest("D:\\txsystem\\system\\javascripts"));
+    gulp.src("javascripts/*.js").pipe(gulp.dest("D:\\txsystem\\system\\assets\\javascripts"));
 });
 
 //把PHP文件夹下所有的php文件复制到发布目录下
@@ -65,48 +64,37 @@ gulp.task("copy-js",function () {
 //把所有的sql文件复制到发布目录下
 gulp.task("copy-sql",function () {
     //复制文件
-    gulp.src("/*.sql").pipe(gulp.dest("D:\\txsystem\\system"));
+    gulp.src("*.sql").pipe(gulp.dest("D:\\txsystem\\system\\assets"));
 });
 //把所有的txt文件复制到发布目录下
 gulp.task("copy-txt",function () {
     //复制文件
-    gulp.src("/*.txt").pipe(gulp.dest("D:\\txsystem\\system"));
+    gulp.src("*.txt").pipe(gulp.dest("D:\\txsystem\\system\\assets"));
 });
     
 
 //把img文件夹下所有的jpg文件复制到发布目录下
 gulp.task("copy-jpg",function () {
-    //复制文件
-    //gulp.src("img/*.jpg").pipe(gulp.dest("D:\\phpStudy\\WWW\\gulpmiaTest\\dist\\img"));
-    gulp.src("images/**/*").pipe(gulp.dest("D:\\txsystem\\system\\images")); //将文件下所有不管什么格式 png jpg gif都传过去
+    gulp.src("images/**/*").pipe(gulp.dest("D:\\txsystem\\system\\assets\\images")); //将文件下所有不管什么格式 png jpg gif都传过去
 });
 
-//开发目录是两个文件夹  发布目录是一个文件夹 将开发的两个文件夹合并到一个文件夹中
-// gulp.task("data",function(){
-//     gulp.src(["xml/*.xml","json/*.json","!json/test.json"])
-//     .pipe(gulp.dest("dist/data"));
-// })
 
  
-//sass编译 定义一个sass编译任务
 gulp.task("copy-css",function () {
-    //把来源scss/*.scss路径下的文件，经过pipe调用sass函数编译，
-    //编译完成之后调用gulp.dest把编译好的文件放入D:\\phpStudy\\WWW\\gulpmiaTest\\dist\\css
-    gulp.src("stylesheets/*.scss").pipe(sass()).pipe(gulp.dest("D:\\txsystem\\system\\stylesheets"));
+    gulp.src("stylesheets/*.scss").pipe(sass()).pipe(gulp.dest("D:\\txsystem\\system\\assets\\stylesheets"));
 });
 
 
 //监听 gulp.watch  总函数有问题 要单独调用  压缩时写的['sass','minify'] 
-gulp.task("watchall",["sass"],function () {
+gulp.task("watchall",["sass","copy-html","copy-jpg","copy-js","copy-sql","copy-txt"],function () {
     // connect.server({
     //     port: 9001,
     //     livereload: true
     // });gulp自带的服务器，但是不能阅读php文件
-    gulp.watch("/*.html",["copy-html"]);
+    gulp.watch("*.html",["copy-html"]);
     gulp.watch("images/**/*",["copy-jpg"]);//将所有文件不管什么格式 png jpg gif都传过去
     gulp.watch("javascripts/*.js",["copy-js"]);
-  
-    gulp.watch("/*.sql",["copy-sql"]);
-    gulp.watch("/*.txt",["copy-txt"]);
+    gulp.watch("*.sql",["copy-sql"]);
+    gulp.watch("*.txt",["copy-txt"]);
     gulp.watch("stylesheets/*.scss",["sass"]);
 });
