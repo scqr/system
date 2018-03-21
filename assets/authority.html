@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>主页</title>
+    <link rel="stylesheet" href="assests/stylesheets/index.css">
+    <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+</head>
+<body>
+    <!-- header    -->
+     <div class="header"></div>
+
+     <!-- section -->
+     <div class="section">
+        <div class="sectionLeft">
+             <ul>
+                <li>系统公告</li>
+                <li>用户管理</li>
+                <li>权限管理</li>
+             </ul>
+        </div>
+        <div class="sectionRight">
+            <div class="sectionText">
+                <div class="superManager">
+                    <div class="authority">
+                        <input type="button" value="全选/全不选" class="select">
+                        <input type="button" value="删除管理员账号" class="remove">
+                        <input type="button" value="对全频道可操作" class="doing">
+                    </div>
+                    <table border="0" cellspacing="0" cellpadding="0" class="authorityTable">
+                        <tr class="authorityTableHeader">
+                            <td></td>
+                            <td>username</td>
+                            <td>userpass</td>
+                            <td></td>
+                        </tr>
+                        <tr class="authorityTableOthers">
+                            <td><input type="checkbox"></td>
+                            <td>liuhui</td>
+                            <td>0308</td>
+                            <td><i>×</i></td>
+                        </tr>
+                    </table>
+                    <form action="" class="add">
+                        <i class="add1">+</i>
+                        <input type="button" value="添加管理员账号" class="acount">
+                        <div id="acountMsg123">
+                            <span class="closeTan">×</span>
+                            <label>账号：<input type="text" ></label>
+                            <label>密码：<input type="password"></label>
+                            <input type="button" value="提交" class="input">
+                        </div>
+                    </form>
+                    <div class="acountMsg"></div>
+                </div>
+                <div class="generalManagerVideo">
+                    <span class="video">视频区</span>
+                    <hr>
+                    <ul>
+                        <li class="videoContent">
+                            <video src="video/1.mp4" poster="imgs/03.jpg" controls></video>
+                            <b class="biaoti">腾讯课堂-Html前端开发攻城狮</b>
+                            <div class="msg">
+                                <i>教育类</i>
+                                <span>01:59:00</span>
+                            </div>
+                            <span class="price">$200</span>
+                        </li>
+                        <li class="addVideo" alt="添加视频">点击添加视频
+                            <a href="javascript:;" class="zdc">+</a>
+                            <div class="upfile">
+                                <iframe src="upfile.html" frameborder="0"></iframe>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="generalManagerAcount">
+                    <div class="authority">
+                        <input type="button" value="剔除" class="select">
+                        <input type="button" value="私信" class="remove">
+                        <input type="button" value="广播" class="doing">
+                    </div>
+                    <table border="0" cellspacing="0" cellpadding="0" class="authorityTable">
+                        <tr class="authorityTableHeader">
+                            <td></td>
+                            <td>id</td>
+                            <td>学习进度</td>
+                            <td></td>
+                        </tr>
+                        <tr class="authorityTableOthers">
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td>001</td>  
+                            <td></td>
+                            <td>
+                                <i>×</i>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+     </div>
+<script src="assests/javascripts/index.js"></script>
+</body>
+</html>

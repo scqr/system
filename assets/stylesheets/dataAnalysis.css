@@ -1,0 +1,59 @@
+body, div, p, ul, ol, li, dl, dt, dd, form, table, tr, td, th, caption, hr, h1, h2, h3, h4, h5, h6, img, header, nav, section, article, footer {
+  margin: 0;
+  padding: 0; }
+
+ul, ol, li {
+  text-decoration: none;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+b, strong {
+  font-weight: 100;
+  font-style: normal; }
+
+i, em {
+  font-style: normal; }
+
+body {
+  font-family: "Microsoft Yahei",Arial; }
+
+img, input, span {
+  border: none; }
+
+img {
+  vertical-align: bottom; }
+
+.iconfont {
+  font-size: 20px; }
+
+.graph {
+  width: 96%;
+  margin-top: 106px;
+  background: white;
+  display: none;
+  overflow: hidden; }
+  .graph .echart {
+    float: left;
+    width: 500px;
+    height: 400px; }
+  .graph .echartT {
+    width: 1000px;
+    height: 600px;
+    padding-top: 100px;
+    background: gray; }
+
+@media only screen and (max-width: 700px) {
+  .graph {
+    width: 400px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 20%;
+    background: white; }
+
+  .echart {
+    float: none; } }
+@media only screen and (max-width: 1000px) {
+  .echartT {
+    display: none; } }

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>视频添加</title>
+</head>
+
+<body>
+    <form action="/uploader" method="post" enctype="multipart/form-data" style="text-align: center">
+        <label>视频名称：<input type="text" name="videoname"/></label><br/>
+        <label>视频时长：<input type="text" name="videotime"/></label><br/>
+        <label>视频价格: <input type="text" name="videoprice"></label><br/>
+        <label>    类型：<input type="text" name="videokind"></label><br/>
+        <label> 选择路径：<input type="file" name="videopath"></label><br/>
+        <input type="submit" value="上传">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+body, div, p, ul, ol, li, dl, dt, dd, form, table, tr, td, th, caption, hr, h1, h2, h3, h4, h5, h6, img, header, nav, section, article, footer {
+  margin: 0;
+  padding: 0; }
+
+ul, ol, li {
+  text-decoration: none;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+b, strong {
+  font-weight: 100;
+  font-style: normal; }
+
+i, em {
+  font-style: normal; }
+
+body {
+  font-family: "Microsoft Yahei",Arial; }
+
+img, input, span {
+  border: none; }
+
+img {
+  vertical-align: bottom; }
+
+.iconfont {
+  font-size: 20px; }
+
+.commonUser {
+  width: 96%;
+  margin-top: 60px;
+  display: none; }
+  .commonUser .searchForm {
+    width: 900px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    box-sizing: border-box; }
+    .commonUser .searchForm .searchInput {
+      width: 240px;
+      height: 35px;
+      border: none;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      text-indent: 8px; }
+    .commonUser .searchForm input::-webkit-input-placeholder {
+      color: #ccc;
+      text-indent: 20px; }
+    .commonUser .searchForm .searchBtn {
+      height: 35px;
+      width: 50px;
+      background: green;
+      margin-left: 5px;
+      border: 1px solid gray;
+      border-radius: 5px;
+      white-space: nowrap;
+      vertical-align: middle;
+      color: #fff;
+      background-color: #5cb85c;
+      border-color: #4cae4c;
+      outline: none; }
+  .commonUser .tableSession {
+    overflow: hidden; }
+    .commonUser .tableSession .sessionaTable {
+      width: 900px;
+      margin: 0 auto;
+      margin-top: 10px;
+      border-collapse: collapse;
+      text-align: center; }
+      .commonUser .tableSession .sessionaTable [type=checkbox] {
+        width: 15px;
+        height: 15px; }
+      .commonUser .tableSession .sessionaTable .sessionaThead {
+        width: 900px; }
+        .commonUser .tableSession .sessionaTable .sessionaThead tr th {
+          height: 60px;
+          background: #e2f2ff;
+          border-top: 3px solid #a7cbff;
+          border-bottom: 1px solid #CADEFF;
+          box-sizing: border-box; }
+        .commonUser .tableSession .sessionaTable .sessionaThead tr .thOne {
+          width: 80px; }
+      .commonUser .tableSession .sessionaTable .sessionaTbody {
+        width: 900px;
+        font-size: 14px;
+        color: #333; }
+        .commonUser .tableSession .sessionaTable .sessionaTbody tr {
+          width: 900px; }
+          .commonUser .tableSession .sessionaTable .sessionaTbody tr td {
+            height: 40px;
+            background: white;
+            border-bottom: 1px solid #CADEFF;
+            box-sizing: border-box; }
+  .commonUser .foot {
+    width: 900px;
+    margin: 0 auto;
+    height: 50px;
+    margin-top: 20px;
+    color: #666;
+    height: 48px;
+    border: 1px solid #eca9a9;
+    background-color: #eaeaea;
+    position: relative; }
+    .commonUser .foot .fl {
+      float: left; }
+    .commonUser .foot .select-all {
+      width: 100px;
+      height: 48px;
+      line-height: 48px;
+      padding-left: 5px;
+      color: #666; }
+    .commonUser .foot .footSame {
+      display: block;
+      width: 60px;
+      height: 40px;
+      border-radius: 5px;
+      height: 30px;
+      line-height: 30px;
+      color: white;
+      text-align: center;
+      margin-left: 8px;
+      margin-top: 9px;
+      font-size: 14px; }
+    .commonUser .foot .add {
+      background-color: #337ab7;
+      border-color: #2e6da4; }
+    .commonUser .foot .auditing {
+      background-color: #5bc0de;
+      border-color: #46b8da; }
+    .commonUser .foot .delete {
+      background-color: #d9534f;
+      border-color: #d43f3a;
+      margin-right: 150px; }
+    .commonUser .foot .ulFr {
+      float: right;
+      margin-right: 20px;
+      border-radius: 4px; }
+      .commonUser .foot .ulFr .fr {
+        border: 1px solid #c8c8c8;
+        float: left;
+        line-height: 28px;
+        height: 28px;
+        display: block;
+        text-align: center;
+        margin-left: 8px;
+        margin-top: 9px;
+        font-size: 14px;
+        color: #666; }
+        .commonUser .foot .ulFr .fr a {
+          color: #337ab7;
+          padding: 0 8px; }

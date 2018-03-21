@@ -1,0 +1,107 @@
+body, div, p, ul, ol, li, dl, dt, dd, form, table, tr, td, th, caption, hr, h1, h2, h3, h4, h5, h6, img, header, nav, section, article, footer {
+  margin: 0;
+  padding: 0; }
+
+ul, ol, li {
+  text-decoration: none;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+b, strong {
+  font-weight: 100;
+  font-style: normal; }
+
+i, em {
+  font-style: normal; }
+
+body {
+  font-family: "Microsoft Yahei",Arial; }
+
+img, input, span {
+  border: none; }
+
+img {
+  vertical-align: bottom; }
+
+.iconfont {
+  font-size: 20px; }
+
+body {
+  background: url(../images/sign_bg.jpg) no-repeat 50% 0; }
+
+/*nav*/
+.loginNav {
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+  .loginNav .loginMiddle {
+    width: 98%;
+    height: 60px;
+    margin: 0 auto; }
+    .loginNav .loginMiddle .loginA {
+      width: 60px;
+      height: 60px;
+      float: left; }
+      .loginNav .loginMiddle .loginA .loginImg {
+        width: 60px;
+        height: 60px; }
+    .loginNav .loginMiddle h2 {
+      float: left;
+      color: #fff;
+      line-height: 60px;
+      margin-left: 1%; }
+    .loginNav .loginMiddle #loginData {
+      color: #fff;
+      width: 20%;
+      float: right;
+      font-size: 14px;
+      line-height: 60px;
+      text-align: center; }
+      .loginNav .loginMiddle #loginData .hour {
+        padding-left: 5%; }
+
+/*login*/
+.login {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 40%;
+  text-align: center;
+  background: rgba(144, 144, 144, 0.4);
+  border-radius: 10px; }
+  .login p {
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 5%;
+    margin-top: 2%; }
+  .login form .loginPass span {
+    margin-right: 3%; }
+  .login form input {
+    outline: none;
+    margin-top: 3%;
+    width: 33%; }
+  .login form [type="text"] {
+    padding: 1%; }
+  .login form [type="password"] {
+    padding: 1%; }
+  .login form .loginP {
+    margin-top: 2%;
+    margin-bottom: 0;
+    color: red;
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px; }
+  .login form [type="button"] {
+    background: #ccc;
+    width: 30%;
+    height: 26px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 2%; }

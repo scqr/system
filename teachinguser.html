@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>授课用户</title>
+    <link rel="stylesheet" href="stylesheets/teachinguser.css" type="text/css"/>
+</head>
+<body>
+     <div class="techingUser">
+        <form class="searchForm"> 
+           <li>
+               <input class="searchInput" type="text" placeholder="搜索您需要的信息"/>
+               <button class="searchBtn" type="submit">搜索</button>
+            </li>
+        </form>
+        <div class="tableSession">
+            <table class="sessionaTable" id="cartTable">
+                <thead class="sessionaThead">
+                    <tr >
+                        <th class="thOne"><label><input class="check-all check" type="checkbox"/>&nbsp;全选</label></th>
+                        <th>课程名称</th>
+                        <th>已发布</th>
+                        <th>待审核</th>
+                        <th>价格</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody class="sessionaTbody">
+                    <tr class="tr">
+                        <td class="checkbox">
+                            <input class="check-one check"  type="checkbox"/>
+                        </td>
+                        <td class="goods">
+                            <span>HTML5</span>
+                        </td>
+                        <td class="release">
+                            <span>是</span>
+                        </td>
+                        <td class="audit">
+                            <span>已审核</span>
+                        </td>
+                        <td class="subtotal">3888.50</td>
+                        <td class="operation">
+                            <span class="delete">删除</span>
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="checkbox">
+                            <input class="check-one check" type="checkbox"/>
+                        </td>
+                        <td class="goods">
+                            <span>java</span>
+                        </td>
+                        <td class="release">
+                            <span>是</span>
+                        </td>
+                        <td class="audit">
+                            <span>已审核</span>
+                        </td>
+                        <td class="subtotal">3888.50</td>
+                        <td class="operation">
+                            <span class="delete">删除</span>
+                        </td>
+                    </tr>
+                    <tr class="tr">  
+                        <td class="checkbox">
+                            <input class="check-one check" type="checkbox"/>
+                        </td>
+                        <td class="goods">
+                            <span>HTML5</span>
+                        </td>
+                        <td class="release">
+                            <span>否</span>
+                        </td>
+                        <td class="audit">
+                            <span>待审核</span>
+                        </td>
+                        <td class="subtotal">3888.50</td>
+                        <td class="operation">
+                            <span class="delete">删除</span>
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="checkbox">
+                            <input class="check-one check" type="checkbox"/>
+                        </td>
+                        <td class="goods">
+                            <span>vue</span>
+                        </td>
+                        <td class="release">
+                            <span>是</span>
+                        </td>
+                        <td class="audit">
+                            <span>已审核</span>
+                        </td>
+                        <td class="subtotal">3888.50</td>
+                        <td class="operation">
+                            <span class="delete">删除</span>
+                        </td>      
+                    </tr> 
+                    <tr class="tr"> 
+                        <td class="checkbox">
+                            <input class="check-one check" type="checkbox"/>
+                        </td>
+                        <td class="goods">
+                            <span>angularjs</span>
+                        </td>
+                        <td class="release">
+                            <span>是</span>
+                        </td>
+                        <td class="audit">
+                            <span>已审核</span>
+                        </td>
+                        <td class="subtotal">3888.50</td>
+                        <td class="operation">
+                            <span class="delete">删除</span>
+                        </td>
+                    </tr> 
+
+                    <!-- <tr class="tr her get">
+                        <td class="checkbox">
+                            <input class="check-one check" type="checkbox"/>
+                        </td>
+                        <td class="goods">
+                            <span></span>
+                        </td>
+                        <td class="release">
+                            <span></span>
+                        </td>
+                        <td class="audit">
+                            <span></span>
+                        </td>
+                        <td class="subtotal"></td>
+                        <td class="operation">
+                            <span class="delete">删除</span>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+        <!-- 底部 -->
+        <div class="foot" id="foot">
+            <label class="fl select-all">
+                <input type="checkbox" class="check-all check"/>&nbsp;全选
+            </label>
+            <a class="fl add  footSame" id="addOne" href="javascript:;">添加</a>
+            <a class="fl auditing footSame" id="auditOne" href="javascript:;">审核</a>
+            <a class="fl delete footSame" id="deleteAll" href="javascript:;">删除</a>
+            <!-- 分页 -->
+            <ul class="ulFr">
+                <li class="fr selected" id="selected">已选信息<span id="selectedTotal">0</span>条 </li>
+                <li class="fr"><a><<</a> </li>
+                <li class="fr"><a>1</a> </li>
+                <li class="fr"><a>2</a> </li>
+                <li class="fr"><a>3</a> </li>
+                <li class="fr"><a>4</a> </li>
+                <li class="fr"><a>5</a> </li>
+                <li class="fr"><a>6</a> </li>
+                <li class="fr"><a>>></a> </li>
+            </ul>
+        </div>
+        <div class="addInfor shandow">
+            <ul>
+                <li><label>课程名称:</label><input class="input1" type="text" ></li>
+                <li><label>已发布:</label><input class="input2" type="text" ></li>
+                <li><label>待审核:</label><input class="input3"  type="text" ></li>
+                <li><label>价格:</label><input class="input4"  type="text" ></li>
+                <li><button type="submit" class="sure">确定</button><button class="quite">取消</button></li>
+            </ul>
+        </div>
+        <div class="checking shandow" >
+            <ul>
+                <li>正在审核，请耐心等...</li>
+                <li><button class="quite">返回</button></li>
+            </ul>
+            
+        </div>
+     </div>   
+</body>
+</html>
+<script src="javascripts/jquery-1.8.3.min.js"></script>
+<script src="javascripts/common.js"></script>
+<script src="javascripts/teachingUse.js"></script>
