@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/notice.css"/>
+</head>
+<body>
+<!--section-right-->
+<div class="sectionRight">
+    <div style="overflow:hidden">
+        <h2>公告</h2>
+        <button class="sectionButton">新建公告</button>
+    </div>
+    <div class="sectionContent">
+        <ul id="contentUls">
+            <li>
+                <h3 class="h3">公告标题<a title="删除" href="javascript:;" class="no">&times;</a></h3>
+                <div class="contentP">好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好</div>
+                <p class="contentData">发布时间：2017年10月26日</p>
+            </li>
+        </ul>
+        <div id="empty">
+            <div id="box">
+                <a href="javascript:;" id="no1">&times;</a>
+                <input class="boxInput" type="text" placeholder="公告标题">
+                <!--<p>请输入内容：</p>-->
+                <div style="font-size: 14px;text-align: -webkit-auto;width: 70%;"><label>发布时间：</label><input type="text" placeholder="格式(例如):2017年10月25日" class="data"/></div>
+                <textarea id="write"></textarea>
+                <div id="but">
+                    <button id="left-btn">发 布</button>
+                    <button id="right-btn">取 消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<script type="text/javascript" src="javascripts/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="javascripts/zy.js"></script>

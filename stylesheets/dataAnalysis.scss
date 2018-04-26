@@ -1,0 +1,49 @@
+@import 'common';
+.graph{
+    width:1000px;
+    height:800px;
+    margin-top:30px;
+    margin-left:20%;
+    background: white;
+    .echart{
+        float:left;
+        width:500px;
+        height:400px;
+    }
+    .echartT{
+        width:1000px;
+        height:600px;
+        padding-top:100px;
+        background:gray
+     }
+ }
+
+ @media only screen and (max-width: 900px){
+    .graph{
+        width:400px;
+        height:300px;
+        margin-top:30px;
+        margin-left:20%;
+        background: white;
+    }
+    .echart{
+       float:none;
+    }
+    
+ }
+ @media only screen and (max-width: 1000px){
+    .echartT{
+      display:none;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
